@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" shref="images/favicon.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="styles.css">
+    <title>Регистарция</title>
+</head>
+<body>
+    <h1>Форма регистрации</h1>
+    <audio src="images/mm.mp3" controls></audio>
+    <div class="images">
+    <div>
+
+    <form action="#" method="get">
+    <fieldset>
+        <legend>Личная информация</legend>
+        <label form="username">Введите ваше имя</label>
+        <input type="text" name="username" id="username" placeholder="Введите ваше имя" required tabindex="1">
+        <br>
+        <label form="username">Введите вашу почту </label>
+        <input type="email" name="usermail" id="usermail" placeholder="example@gmail/com" tabindex="2">
+        <br>
+        <label form="username">Введите ваш пароль</label>
+        <input type="password" name="password" id="password">
+        <br>
+        <label form="age">Дата рождения</label>
+        <input type="date" name="age" id="age" >
+        <br>
+        <label form="avatar">Аватарка</label>
+        <input type="file" name="avatar" id="avatar" >
+        <br>
+        <p>Ваш пол</p>
+        <label form="male">Мужский</label>
+        <input type="radio" name="avatar" id="male" checked>
+        <label form="female">Женский</label>
+        <input type="radio" name="avatar" id="female" >
+        <br>
+    </fieldset>
+    <fieldset>
+            <legend>Ваши навыки</legend>
+            <p>Ваши увлечения</p>
+            <label form="it">IT</label>
+            <input type="checkbox" name="int" id="it" >
+            
+            <label form="sport">SPORT</label>
+            <input type="checkbox" name="int" id="sport">
+
+            <label form="footbol">FOOTBOL</label>
+            <input type="checkbox" name="int" id="footbol">
+             
+            <br>
+            <label for="about">Напишите о себе</label>
+            <textarea name="about" cols="20" rows="3"></textarea>
+
+            <label form="skills">Навыки</label>
+            <select name="skills" id="skills" multiple>
+                <option value="JS">JS</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS"selected> CSS</option>
+                <option value="REACT">REACT</option>
+
+            </select>
+    </fieldset>
+         <button type="submit">Отправить</button>
+        <button type="reset">Очистить</button>   
+        </form>
+</body>
+</html>
